@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    color: white;
+    overflow-x: hidden;
+}
+.clearfix::after{
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    /* overflow-x: hidden; */
+    clear: both;
+}
+.main{
+    background-image: url("../images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.row
+{
+    max-width: 1180px;
+    margin: 0  auto;
+}
+.logo{
+    margin:  25px 10px;
+    float: left;
+    color: #bf55ec;
+    text-shadow: 1px 0px 1px  #fff;
+}
+.logo img{
+    width: 35px;
+    margin-bottom : -5px;
+}
+.main_nav
+{
+    float: right;
+    margin-top: 20px;
+}
+.main_nav li{
+    padding-right: 10px;
+    margin-top: 12px;
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main_nav a:hover{
+     /* transition: 0.6s ease-in-out; */
+    /*color: hotpink; */
+    /* background-color: rgba(241, 237, 237, 0.473); */
+    border-bottom: 1px solid #bf55ec;
+}
+.main_nav a{
+    padding: 5px 0 0 0 ;
+    text-decoration: none;
+    border-bottom: 3px solid #bf55ec;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+h1{
+    font-size: 48px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn
+{
+    display: inline-block;
+    border-radius: 200px;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+.btn-full{
+    border: 1px solid #bf55ec;
+    color: #bf55ec;
+    background-color: transparent;
+}
+.btn-full:hover{
+    background-color: white;
+}
+.btn-half{
+    border: 1px solid white;
+    color: white;
+    margin-left: 15px;
+    background-color: transparent;
+
+}
+.btn-half:hover{
+    background-color: #bf55ec;
+}
+
+.colorchange{
+    animation: colorchangetea 5s infinite;
+}
+
+@keyframes colorchangetea{
+    0%{color: #bf55ec;}
+    25%{color: #fff;}
+    50%{color: #bf55ec;}
+    100%{color: #fff;}
+}
+
